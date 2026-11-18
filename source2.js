@@ -217,7 +217,7 @@ window.mod_web_registerParsers({
                 if (rawItem.url) {
                     standardItems.push({
                         title: rawItem.title,
-                        url: (typeof rawItem.url === 'string' && rawItem.url) ? ('https://cf.aston.rocks/' + rawItem.url) : rawItem.url // 统一经 cf 中转（可直连，稳定）
+                        url: (typeof rawItem.url === 'string' && rawItem.url.indexOf('http') === 0) ? rawItem.url : 'https://cf.aston.rocks/' + rawItem.url // 原样返回，由 site_proxy 统一加前缀
                     });
                 }
             });
