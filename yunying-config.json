@@ -107,7 +107,8 @@
       },
       "search": {
         "url": "https://api.olelive.com/v1/pub/index/search/#msearchword/vod/0/1/10"
-      }
+      },
+      "site_proxy": "https://cf.aston.rocks/"
     },
     {
       "available": false,
